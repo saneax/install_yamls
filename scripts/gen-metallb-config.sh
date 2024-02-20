@@ -163,7 +163,7 @@ spec:
   ipAddressPools:
   - internalapi
   interfaces:
-  - ${INTERFACE}.20
+  - ${INTERFACE}.13
 ---
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
@@ -174,7 +174,7 @@ spec:
   ipAddressPools:
   - storage
   interfaces:
-  - ${INTERFACE}.21
+  - ${INTERFACE}.14
 ---
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
@@ -185,7 +185,7 @@ spec:
   ipAddressPools:
   - tenant
   interfaces:
-  - ${INTERFACE}.22
+  - ${INTERFACE}.15
 EOF_CAT
 cat > ${DEPLOY_DIR}/bgppeers.yaml <<EOF_CAT
 ---
